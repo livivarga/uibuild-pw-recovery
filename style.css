@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto min-content;
+}
+
+.password-block {
+  justify-self: center;
+  align-self: center;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 24px;
+  color: #006837;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 520px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+section {
+  justify-self: center;
+  align-self: center;
+}
+
+.security-block {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 520px;
+  color: #467745; /*The color code in the original description is wrong*/
+  background-color: #f9c582;
+  padding: 20px 0;
+  font-weight: 600; /*In the original description the font weight is medium, so 500*/
+}
+
+p {
+  margin-left: 20px;
+}
+
+.question {
+  font-style: italic;
+  font-weight: 500;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-width: 0;
+  max-width: 480px;
+  height: 64px;
+  min-width: calc(100% - 40px);
+  margin: 20px 20px 0 20px;
+}
+
+::placeholder {
+  color: #98a991;
+  padding-left: 20px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px; /*In the original description 21px*/
+  font-weight: 700;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: #f9c582;
+  color: #006837;
+  margin: 20px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
